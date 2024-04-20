@@ -41,8 +41,8 @@ on:
         type: boolean
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
 #  schedule:
 #    - cron: 0 16 * * *
 
@@ -59,7 +59,7 @@ env:
   CONFIG_FILE: RAX3000M-eMMC_XR30-eMMC/.mtwifi-cfg.config
   DIY_P1_SH: RAX3000M-eMMC_XR30-eMMC/diy-part1.sh
   DIY_P2_SH: RAX3000M-eMMC_XR30-eMMC/diy-part2.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
